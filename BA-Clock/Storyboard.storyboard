@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ogI-ee-LoA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="ZvR-vE-wwd">
+            <objects>
+                <viewController storyboardIdentifier="login" id="0nZ-HQ-XeY" customClass="Login" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S3k-Lz-zp7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7k0-4T-EJy"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7k0-4T-EJy" firstAttribute="trailing" secondItem="S3k-Lz-zp7" secondAttribute="trailing" type="default" id="ASP-cC-iHg"/>
+                            <constraint firstItem="7k0-4T-EJy" firstAttribute="top" secondItem="S3k-Lz-zp7" secondAttribute="top" type="default" id="C3o-UY-IeS"/>
+                            <constraint firstItem="7k0-4T-EJy" firstAttribute="bottom" secondItem="S3k-Lz-zp7" secondAttribute="bottom" type="default" id="Kcw-qC-OWj"/>
+                            <constraint firstItem="7k0-4T-EJy" firstAttribute="leading" secondItem="S3k-Lz-zp7" secondAttribute="leading" type="default" id="sPY-xA-fbt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y03-qw-1za"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzR-uA-XPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368" y="-40"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="77x-X7-yEn">
+            <objects>
+                <navigationController id="ogI-ee-LoA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gay-ic-aKU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0nZ-HQ-XeY" kind="relationship" relationship="rootViewController" id="gXu-me-u9h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVi-8b-TfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-811" y="-26"/>
+        </scene>
+        <!--Mastercialist-->
+        <scene sceneID="sX6-cb-gEc">
+            <objects>
+                <viewController storyboardIdentifier="mastercialist" id="h28-t5-l3G" customClass="mastercialist" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9d-86-94p">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1SM-4d-t1r">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Item" id="J5i-yL-8IE"/>
+                                    <tabBarItem title="Item" id="drj-6E-vJW"/>
+                                    <tabBarItem title="Item" id="Z3r-bL-52z"/>
+                                    <tabBarItem title="Switch Co." id="abu-UC-OT2"/>
+                                </items>
+                            </tabBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMb-eG-vyL"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="b6U-1B-Dhe">
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kMb-eG-vyL" firstAttribute="top" secondItem="b6U-1B-Dhe" secondAttribute="bottom" type="default" id="IP5-t0-AcA"/>
+                            <constraint firstItem="b6U-1B-Dhe" firstAttribute="trailing" secondItem="q9d-86-94p" secondAttribute="trailing" type="default" id="K1T-ZQ-xU7"/>
+                            <constraint firstItem="1SM-4d-t1r" firstAttribute="bottom" secondItem="q9d-86-94p" secondAttribute="bottom" type="default" id="Qmv-84-QrX"/>
+                            <constraint firstItem="kMb-eG-vyL" firstAttribute="leading" secondItem="q9d-86-94p" secondAttribute="leading" type="default" id="Tlv-c6-dRB"/>
+                            <constraint firstItem="kMb-eG-vyL" firstAttribute="trailing" secondItem="q9d-86-94p" secondAttribute="trailing" type="default" id="dKd-tu-t63"/>
+                            <constraint firstItem="b6U-1B-Dhe" firstAttribute="leading" secondItem="q9d-86-94p" secondAttribute="leading" type="default" id="hVf-Fx-vI3"/>
+                            <constraint firstItem="kMb-eG-vyL" firstAttribute="bottom" secondItem="1SM-4d-t1r" secondAttribute="top" type="default" id="ihB-km-dNi"/>
+                            <constraint firstItem="1SM-4d-t1r" firstAttribute="trailing" secondItem="q9d-86-94p" secondAttribute="trailing" type="default" id="qeu-kr-3Hj"/>
+                            <constraint firstItem="b6U-1B-Dhe" firstAttribute="top" secondItem="q9d-86-94p" secondAttribute="top" type="default" id="tMs-vI-dCD"/>
+                            <constraint firstItem="1SM-4d-t1r" firstAttribute="leading" secondItem="q9d-86-94p" secondAttribute="leading" type="default" id="ybI-Y7-JwD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ntabbar" destination="1SM-4d-t1r" id="TAd-WS-qfU"/>
+                        <outlet property="searchtxt" destination="b6U-1B-Dhe" id="5lH-nX-3Ee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tct-NP-OJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158" y="15"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="Login" superclassName="fViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Login.h"/>
+            <relationships>
+                <relationship kind="action" name="CheckboxClicked:"/>
+                <relationship kind="action" name="ForgotPasOnclick:"/>
+                <relationship kind="action" name="login:" candidateClass="UIButton"/>
+                <relationship kind="action" name="popupscreen2:"/>
+                <relationship kind="action" name="textFieldDoneEditing:"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="fViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/fViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changePasscode:"/>
+                <relationship kind="action" name="enterPasscode:"/>
+                <relationship kind="action" name="logout:"/>
+                <relationship kind="action" name="setPasscode:"/>
+                <relationship kind="outlet" name="passcodeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="simpleSwitch" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+        <class className="mastercialist" superclassName="fathercontroller">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/mastercialist.h"/>
+            <relationships>
+                <relationship kind="action" name="dorefresh:"/>
+                <relationship kind="outlet" name="ntabbar" candidateClass="UITabBar"/>
+                <relationship kind="outlet" name="searchtxt" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
